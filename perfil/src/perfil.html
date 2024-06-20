@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GG-inicial</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <sidebar>
+        <h1>GuardaGrana</h1>
+        <ul>
+            <li><a href="#">Aprender</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Equipe</a></li>
+            <li><a href="#">Perfil</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Progresso</a></li>
+            <li><a href="/Metas/metas.html">Metas</a></li>
+        </ul>
+    </sidebar>
+
+    <main>
+        <div class="container">
+            <h1>Perfil do Usuário</h1>
+            <div id="user-info">
+                <div class="profile-picture">
+                    <img id="profile-img" src="" alt="Foto do Perfil">
+                    <input type="file" id="profile-img-input" accept="image/*" style="display: none;">
+                    <button id="upload-btn">Escolher arquivo</button>
+                </div>
+                <form id="perfil-form">
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login">Login:</label>
+                        <input type="text" id="login" name="login" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="e-mail">Email:</label>
+                        <input type="email" id="e-mail" name="e-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="senha">Alterar Senha:</label>
+                        <input type="password" id="senha" name="senha">
+                    </div>
+                    <div class="form-group">
+                        <label for="senha2">Confirme a nova Senha:</label>
+                        <input type="password" id="senha2" name="senha2">
+                    </div>
+                    <button type="submit">Atualizar</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="perfil.js"></script>
+</body>
+</html>

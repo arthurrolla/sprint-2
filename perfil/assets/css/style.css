@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poetsen+One&family=Red+Rose:wght@300..700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    min-height: 100%;
+    min-width: 100%;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #110e09;
+    color: whitesmoke;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Estilo para a barra lateral */
+sidebar {
+    background-color: #110e09;
+    border-right: 2px solid #4e4736;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+sidebar ul {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    list-style: none;
+    padding: 10vh;
+    margin: 0;
+}
+
+sidebar ul li {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+sidebar ul li a:hover {
+  transition: all ease 0.7s;
+  color: rgba(245, 245, 245, 0.5);
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Alinhar os itens ao topo */
+    gap: 2rem;
+    flex-grow: 1;
+    padding: 2rem;
+}
+
+.container {
+    background-color: #4e4736;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 5rem;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #3d362c;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    color: whitesmoke;
+    background-color: transparent;
+    border-radius: 15px;
+    border: 2px solid #ff6b3581;
+    box-shadow: 2px 2px 0 #ff6b353d;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 0;
+    background-color: #ff6b3581;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all ease 1s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.profile-picture {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 20px auto;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#upload-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4e4736;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.profile-picture:hover #upload-btn {
+    opacity: 0.8;
+}
+
+
+.profile-picture:hover #profile-img {
+    filter: blur(2px);
+}
+
+#upload-btn:hover {
+    opacity: 1;
+}

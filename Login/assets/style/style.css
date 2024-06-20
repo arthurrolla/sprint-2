@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poetsen+One&family=Red+Rose:wght@300..700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    min-height: 100%;
+    min-width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../img/background.png);
+    background-size: cover;
+    background-position: center;
+    color: whitesmoke;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 2rem;
+}
+
+#login-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    max-width: 90%;
+    padding: 2rem;
+}
+
+.img_leao {
+    width: 50%;
+    max-width: 300px;
+}
+
+.img_leao img {
+    max-width: 100%;
+}
+
+form {
+    border: 2px solid #4e4736;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(78, 71, 54, 1);
+    font-size: 1.5rem;
+    width: 100%;
+    max-width: 600px;
+}
+
+form h3 {
+    padding-bottom: 2rem;
+    font-weight: 800;
+}
+
+.form-group {
+    padding-bottom: 1rem;
+}
+
+form input {
+    color: whitesmoke;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid #4e4736;
+    background-color: transparent;
+    width: 100%;
+}
+
+.form-group button {
+    border: 2px solid #ff9600;
+    background-color: #4e4736;
+    padding: 1rem;
+    border-radius: 20px;
+    color: whitesmoke;
+    cursor: pointer;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.form-group a {
+    color: rgb(169, 71, 14);
+}
